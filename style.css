@@ -1,33 +1,40 @@
+
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  background-color: #fff;
-  color: #333;
+  background-color: #f4f4f9; 
+  color: #333; 
   transition: background-color 0.3s, color 0.3s;
 }
 
 
 .navbar {
-  transition: background-color 0.3s;
+  background-color: #001F3F !important; 
+  transition: background-color 0.3s, box-shadow 0.3s;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
 }
 
 .navbar-brand {
   font-weight: bold;
+  color: #f8f9fa !important; 
 }
 
 .nav-link {
-  color: #fff !important;
+  color: #f8f9fa !important; 
+  font-weight: 500;
+  transition: color 0.3s;
 }
 
 .nav-link:hover {
-  text-decoration: underline;
+  color: #ffcc00 !important; 
+  text-decoration: none;
 }
 
 
 section h2 {
   font-size: 2rem;
   margin-bottom: 20px;
-  color: #343a40;
+  color: #002855; 
 }
 
 
@@ -44,27 +51,45 @@ ul {
 
 
 .hero-section {
-  background-color: #f8f9fa;
+  background-color: #e3f2fd;
+  padding: 50px 0;
+  text-align: center;
 }
 
 .hero-section img {
-  border: 4px solid #343a40;
+  border: 4px solid #001F3F; 
+  border-radius: 50%;
 }
 
 .hero-section h1 {
   font-size: 2.5rem;
   font-weight: bold;
-  color: #343a40;
+  color: #002855; 
 }
 
 .hero-section p {
   font-size: 1.2rem;
-  color: #6c757d;
+  color: #495057; 
+}
+
+
+.btn-custom {
+  background-color: #ffcc00; 
+  color: #001F3F; 
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 10px 20px;
+  transition: background 0.3s ease-in-out;
+}
+
+.btn-custom:hover {
+  background-color: #ffa500; 
+  color: white;
 }
 
 
 a {
-  color: #0d6efd;
+  color: #007bff; 
   text-decoration: none;
 }
 
@@ -74,22 +99,43 @@ a:hover {
 
 
 .dark-mode {
-  background-color: #000 !important;
-  color: red !important;
+  background-color: #121212 !important; 
+  color: #f8f9fa !important;
 }
 
 .dark-mode .navbar {
-  background-color: #222 !important;
+  background-color: #0a192f !important; 
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2); 
 }
 
 .dark-mode .nav-link {
-  color: red !important;
+  color: #ffcc00 !important; 
 }
 
-.dark-mode a {
-  color: #ff4d4d;
+.dark-mode .nav-link:hover {
+  color: #ffa500 !important; 
+}
+
+.dark-mode .hero-section {
+  background-color: #1a1a2e !important; 
 }
 
 .dark-mode section h2 {
-  color: red;
+  color: #ffcc00; 
+}
+
+.dark-mode a {
+  color: #ffcc00;
+}
+
+.dark-mode a:hover {
+  color: #ffa500;
+}
+
+.footer {
+  background-color: #001F3F;
+  color: #f8f9fa;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 20px;
 }
